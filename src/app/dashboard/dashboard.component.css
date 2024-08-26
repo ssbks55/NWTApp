@@ -1,0 +1,13 @@
+.dashboard-container {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px 60px; /* Padding for footer */
+    background-color: #f4f4f4;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  @media (max-width: 600px) {
+    .dashboard-container {
+      padding: 0 5px 60px; /* Adjust padding for smaller screens */
+    }
+  }
+  

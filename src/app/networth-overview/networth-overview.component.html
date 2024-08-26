@@ -1,0 +1,16 @@
+<div class="networth-container">
+  <div class="networth-header">
+    <h1>{{headingText}}</h1>
+    <p [ngClass]="getNetworthStatus(totalNetWorth)">{{ totalNetWorth | currency:'INR':'symbol':'1.0-0' }}</p>
+  </div>
+  <div class="networth-details">
+    <div class="detail-item asset">
+      <h3>Assets</h3>
+      <p>{{ totalAssets | currency:'INR':'symbol':'1.0-0' }}</p>
+    </div>
+    <div class="detail-item liability">
+      <h3>Liabilities</h3>
+      <p>{{ totalLiabilities | currency:'INR':'symbol':'1.0-0' }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333; /* Dark background for footer */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  }
+  
+  .footer-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+  
+  .footer-menu a {
+    color: #fff; /* Default text color for icons */
+    font-size: 24px; /* Icon size */
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .footer-menu a.active {
+    color: #ff5722; /* Dark orange color for active link */
+  }
+  
+  .footer-menu i {
+    display: block;
+  }
+  

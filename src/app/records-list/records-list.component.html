@@ -1,0 +1,21 @@
+<div class="records-list">
+    <ng-container *ngFor="let record of data">
+        <div class="record-item" [ngClass]="getNetWorthChangeClass(record)" (click)="navigateToDetail(record)">
+            <div class="record-content">
+                <div class="networth-info">
+                    <strong>{{ calculateNetWorth(record) | currency:'INR':'symbol':'1.0-0' }}</strong>
+                    <span class="networth-change">
+                        {{calculateNetWorthDifference(record)}} ({{calculateNetWorthPercentChanged(record)}}%)
+                    </span>
+                </div>
+            </div>
+            <div class="date-info">
+                <strong>{{ record.date }}</strong>
+            </div>
+            <div class="icon-container">
+                <i *ngIf="getNetWorthChangeClass(record) === 'increase'" class="fa fa-arrow-up increase-icon"></i>
+                <i *ngIf="getNetWorthChangeClass(record) === 'decrease'" class="fa fa-arrow-down decrease-icon"></i>
+            </div>
+        </div>
+    </ng-container>
+</div>

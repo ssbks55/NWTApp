@@ -1,0 +1,139 @@
+/* Main container */
+.record-date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .record-date {
+    font-size: 1.5rem;
+    color: #FF7043;
+    margin: 0;
+  }
+  
+  .edit-button {
+    background: none;
+    border: none;
+    color: #FF7043;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .edit-button i {
+    font-size: 1.2rem;
+    color: #FF7043;
+    transition: color 0.3s ease;
+  }
+  
+  .edit-button:hover i {
+    color: #ff5733; /* Darker shade on hover */
+  }
+  
+  /* Summary section for net worth, assets, liabilities */
+  .summary-section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .networth-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .assets-liabilities {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .assets-box, .liabilities-box {
+    width: 48%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Category group */
+  .category-group {
+    margin-bottom: 20px;
+  }
+  
+  .category-title {
+    font-weight: bold;
+    color: #FF7043;
+    margin-bottom: 10px;
+  }
+  
+  /* Record item styling */
+  .record-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+    border-left: 8px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .record-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .color-bar {
+    width: 8px;
+    height: 100%;
+    margin-right: 15px;
+  }
+  
+  .record-details {
+    flex-grow: 1;
+  }
+  
+  .record-details p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .percentage {
+    font-size: 0.8rem;
+    color: #777;
+  }
+  
+  .record-value {
+    text-align: right;
+    font-weight: bold;
+  }
+  
+  /* Asset and Liability border color */
+  .asset {
+    border-left-color: #4caf50; /* Green for assets */
+  }
+  
+  .liability {
+    border-left-color: #f44336; /* Red for liabilities */
+  }
+  
+  .assets-text {
+    font-size: 1.5rem;
+    color: #4caf50; /* Green for assets */
+    font-weight: 700;
+  }
+  
+  .liabilities-text {
+    font-size: 1.5rem;
+    color: #f44336; /* Red for liabilities */
+    font-weight: 700;
+  }

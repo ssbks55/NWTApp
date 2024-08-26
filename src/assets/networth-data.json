@@ -1,0 +1,184 @@
+[
+    {
+        "recordId": "1",
+        "date": "26/08/2024",
+        "createdBy": "Admin",
+        "userId": "1",
+        "data": [
+            {
+                "title": "Cash",
+                "category": "Cash",
+                "value": "290000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Axis",
+                "category": "Banks",
+                "value": "10000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Home Loan",
+                "category": "Loan",
+                "value": "50000",
+                "color": "#f44336",
+                "type": "liability"
+            },
+            {
+                "title": "Credit Card",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            }
+        ]
+    },
+    {
+        "recordId": "2",
+        "date": "25/08/2024",
+        "createdBy": "Admin",
+        "userId": "1",
+        "data": [
+            {
+                "title": "Cash",
+                "category": "Cash",
+                "value": "10000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Axis",
+                "category": "Banks",
+                "value": "10000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Home Loan",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            },
+            {
+                "title": "Credit Card",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            }
+        ]
+    },
+    {
+        "recordId": "3",
+        "date": "24/08/2024",
+        "createdBy": "Admin",
+        "userId": "1",
+        "data": [
+            {
+                "title": "Cash",
+                "category": "Cash",
+                "value": "5000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Axis",
+                "category": "Banks",
+                "value": "10000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Home Loan",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            },
+            {
+                "title": "Credit Card",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            }
+        ]
+    },
+    {
+        "recordId": "4",
+        "date": "23/08/2024",
+        "createdBy": "Admin",
+        "userId": "1",
+        "data": [
+            {
+                "title": "Cash",
+                "category": "Cash",
+                "value": "5000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Axis",
+                "category": "Banks",
+                "value": "10000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Home Loan",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            },
+            {
+                "title": "Credit Card",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            }
+        ]
+    },
+    {
+        "recordId": "5",
+        "date": "23/08/2024",
+        "createdBy": "Admin",
+        "userId": "1",
+        "data": [
+            {
+                "title": "Cash",
+                "category": "Cash",
+                "value": "15000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Axis",
+                "category": "Banks",
+                "value": "10000",
+                "color": "#4caf50",
+                "type": "asset"
+            },
+            {
+                "title": "Home Loan",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            },
+            {
+                "title": "Credit Card",
+                "category": "Loan",
+                "value": "100000",
+                "color": "#f44336",
+                "type": "liability"
+            }
+        ]
+    }
+    
+    
+]

@@ -1,0 +1,97 @@
+html, body {
+    height: 100%; /* Ensure the body takes up full viewport height */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #f0f2f5; /* Light background color for the page */
+}
+
+.pin-container {
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 20px; /* Soft rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    padding: 30px; /* Generous padding */
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Maximum width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+}
+
+.brand-name {
+    font-size: 2em; /* Prominent brand name */
+    color: #333; /* Dark text for readability */
+    margin-bottom: 20px; /* Spacing below */
+}
+
+h2 {
+    font-size: 1.5em; /* Large heading size */
+    color: #333; /* Dark text */
+    margin-bottom: 20px; /* Spacing below */
+}
+
+.pin-inputs {
+    display: flex;
+    gap: 10px; /* Spacing between input fields */
+    margin-bottom: 20px; /* Spacing below */
+}
+
+.pin-input {
+    width: 40px; /* Fixed width for consistency */
+    height: 60px; /* Fixed height for uniformity */
+    font-size: 2em; /* Large font size */
+    text-align: center; /* Center text */
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 10px; /* Soft rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark text */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.pin-input:focus {
+    border-color: #4caf50; /* Green border on focus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on focus */
+}
+
+.submit-button {
+    background-color: #4caf50; /* Primary green button */
+    color: #fff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Soft rounded corners */
+    padding: 15px 30px; /* Generous padding */
+    font-size: 1.2em; /* Large font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.submit-button:disabled {
+    background-color: #aaa; /* Disabled button color */
+    cursor: not-allowed; /* Not-allowed cursor */
+}
+
+.submit-button:not(:disabled):hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+@media (max-width: 600px) {
+    .pin-container {
+        padding: 20px; /* Adjusted padding */
+        width: 95%; /* Adjusted width */
+    }
+    
+    .pin-input {
+        width: 35px; /* Adjusted width */
+        height: 50px; /* Adjusted height */
+        font-size: 1.5em; /* Adjusted font size */
+    }
+
+    .submit-button {
+        padding: 12px 25px; /* Adjusted padding */
+        font-size: 1em; /* Adjusted font size */
+    }
+}

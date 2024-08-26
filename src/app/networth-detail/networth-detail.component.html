@@ -1,0 +1,38 @@
+<div *ngIf="record" class="record-detail-container">
+  <!-- Date as Heading -->
+  <div class="record-date-container">
+    <h2 class="record-date">{{ record.date }}</h2>
+    <button class="edit-button">
+      <i class="fas fa-edit"></i> <!-- Font Awesome Edit Icon -->
+    </button>
+  </div>
+
+  <app-networth-overview [totalAssets]="totalAssets" [totalLiabilities]="totalLiabilities"
+    [totalNetWorth]="totalNetWorth">
+  </app-networth-overview>
+
+  <!-- Grouped Record List by Category -->
+  <div class="records-list">
+    <ng-container *ngFor="let categoryGroup of groupedRecords">
+      <div class="category-group">
+        <p class="category-title">{{ categoryGroup.category }} - Total: {{ categoryGroup.total |
+          currency:'INR':'symbol':'1.0-0' }}</p>
+
+        <!-- Individual Items -->
+        <div *ngFor="let item of categoryGroup.items" class="record-item"
+          [ngClass]="{'asset': item.type === 'asset', 'liability': item.type === 'liability'}">
+          <div class="record-content">
+            <div class="color-bar" [ngStyle]="{'background-color': item.color}"></div>
+            <div class="record-details">
+              <p>{{ item.title }}</p>
+              <p class="percentage">{{ getItemPercentage(item) }}%</p>
+            </div>
+            <div class="record-value">
+              <p>{{ item.value | currency:'INR':'symbol':'1.0-0' }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

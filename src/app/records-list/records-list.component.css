@@ -1,0 +1,88 @@
+.records-list {
+    margin-bottom: 60px; /* Space for footer */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.record-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    background: #e2e3e5;
+    transition: background 0.3s ease;
+}
+
+.record-content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.networth-info {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+}
+
+.networth-info strong {
+    font-size: 1.1rem;
+}
+
+.networth-change {
+    font-size: 0.8rem; /* Smaller text for difference and percentage */
+    color: #777; /* Lighter color for contrast */
+    margin-top: 2px; /* Small spacing between the two texts */
+}
+
+.date-info {
+    text-align: right;
+    margin-right: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.increase-icon {
+    color: green;
+}
+
+.decrease-icon {
+    color: red;
+}
+
+.increase {
+    background: linear-gradient(to left, #d4efdf, #a2d9ce); /* Light green gradient */
+}
+
+.decrease {
+    background: linear-gradient(to left, #f8d7da, #f5c6cb); /* Light red gradient */
+}
+
+.unchanged {
+    background: #e2e3e5;
+}
+
+@media (max-width: 600px) {
+    .record-item {
+        font-size: 14px;
+        padding: 8px;
+    }
+    .icon-container {
+        font-size: 1.2rem;
+    }
+    .date-info {
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+}

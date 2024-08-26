@@ -1,0 +1,16 @@
+<!-- Networth Overview Section -->
+<app-networth-overview
+  [totalAssets]="totalAssets"
+  [totalLiabilities]="totalLiabilities"
+  [totalNetWorth]="totalNetWorth"
+  [headingText]="'Current Net Worth'">
+</app-networth-overview>
+
+<!-- Records List Section -->
+<app-records-list
+  [data]="data"
+  [getNetWorthChangeClass]="getNetWorthChangeClass"
+  [calculateNetWorth]="calculateNetWorth"
+  [calculateNetWorthPercentChanged]="calculateNetWorthPercentChanged"
+  [calculateNetWorthDifference]="calculateNetWorthDifference">
+</app-records-list>
