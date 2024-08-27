@@ -1,0 +1,8 @@
+<div class="category-container">
+    <input #categoryInput type="text" placeholder="Add new category" />
+    <button (click)="addCategory(categoryInput.value)">Add Category</button>
+    <ul>
+      <li *ngFor="let category of categories">{{ category }}</li>
+    </ul>
+  </div>
+  

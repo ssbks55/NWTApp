@@ -1,0 +1,53 @@
+.category-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff7f0; /* Light background with a subtle orange tint */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"] {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #FF7043; /* Dark orange border */
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 24px); /* Adjust for padding and border */
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #FF7043;
+    color: white;
+    padding: 8px 12px; /* Smaller padding for a smaller button */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  button:hover {
+    background-color: #E64A19; /* Darker shade on hover */
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul li {
+    background-color: #FFF7E0; /* Light orange background for list items */
+    border: 1px solid #FF7043;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: #E64A19;
+    font-size: 14px;
+  }
+  

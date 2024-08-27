@@ -1,0 +1,33 @@
+<div class="form-container">
+    <form (submit)="addItem()">
+      <label for="title">Title</label>
+      <input id="title" [(ngModel)]="newItem.title" name="title" placeholder="Title" required />
+  
+      <label for="category">Category</label>
+      <select id="category" [(ngModel)]="newItem.category" name="category" required>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+  
+      <label for="value">Value</label>
+      <input id="value" [(ngModel)]="newItem.value" name="value" type="number" placeholder="Value" required />
+  
+      <label for="color">Color</label>
+      <input id="color" [(ngModel)]="newItem.color" name="color" type="color" placeholder="Color" />
+  
+      <label for="type">Type</label>
+      <select id="type" [(ngModel)]="newItem.type" name="type" required>
+        <option value="asset">Asset</option>
+        <option value="liability">Liability</option>
+      </select>
+  
+      <button type="submit">Add Item</button>
+    </form>
+  
+    <ul class="item-list">
+      <li *ngFor="let item of items; let i = index">
+        <span>{{ item.title }} ({{ item.category }}): {{ item.value }} - {{ item.type }}</span>
+        <button (click)="removeItem(i)">Remove</button>
+      </li>
+    </ul>
+  </div>
+  

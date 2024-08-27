@@ -12,6 +12,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SettingsComponent } from './settings/settings.component';
 import { NetworthDetailComponent } from './networth-detail/networth-detail.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { AssetLiabilityFormComponent } from './asset-liability-form/asset-liability-form.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { NetworthDetailComponent } from './networth-detail/networth-detail.compo
     HeaderComponent,
     FooterComponent,
     SettingsComponent,
-    NetworthDetailComponent
+    NetworthDetailComponent,
+    CategoriesComponent,
+    AssetLiabilityFormComponent
   ],
   imports: [
     BrowserModule,
